@@ -4,16 +4,16 @@ version: "v0.83.6"
 usage: trivy aqua <srcPath>
 description: A Trivy plugin that sends results to Aqua.
 platforms:
-  # - selector: # optional
-  #     os: linux
-  #     arch: amd64
-  #   uri: https://github.com/Mor-s-organization/trivy-plugin-version/releases/download/1.0.0/plugin-pre-release-testing.tar.gz
-  #   bin: ./aqua
-  - selector:
+  - selector: # optional
       os: linux
-      arch: arm64
+      arch: amd64
     uri: https://github.com/Mor-s-organization/trivy-plugin-version/releases/download/1.0.0/plugin-pre-release-testing.tar.gz
     bin: ./aqua
+  # - selector:
+  #     os: linux
+  #     arch: arm64
+  #   uri: https://github.com/Mor-s-organization/trivy-plugin-version/releases/download/1.0.0/plugin-pre-release-testing.tar.gz
+  #   bin: ./aqua
   - selector:
       os: darwin
       arch: amd64
